@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d7d717704de804bb2cf3acaf7d44fd, type: 3}
+  m_Name: Rogue
+  m_EditorClassIdentifier: 
+  portraitSprite: {fileID: 21300000, guid: 0ceaa135fdd3b8b4eb26e02a8ecec3ce, type: 3}
+  startingLevel: 0
+  startingExperience: 0
+  personality:
+    trait1: 1
+    traitValue1: 0
+    trait2: 0
+    traitValue2: 0
+    trait3: 0
+    traitValue3: 0
+    trait4: 0
+    traitValue4: 0
+  inventory:
+    slot1: {fileID: 0}
+    slot2: {fileID: 0}
+    slot3: {fileID: 0}
+    slot4: {fileID: 0}
+    slot5: {fileID: 0}
+    slot6: {fileID: 0}
+    slot7: {fileID: 0}
+    slot8: {fileID: 0}
+  equipped:
+    mainHandSlot: {fileID: 11400000, guid: 451977f097cacc2419312f4cab736f56, type: 2}
+    offHandSlot: {fileID: 0}
+    headSlot: {fileID: 0}
+    shoulderSlot: {fileID: 0}
+    chestSlot: {fileID: 0}
+    armSlot: {fileID: 0}
+    handSlot: {fileID: 0}
+    legSlot: {fileID: 0}
+    footSlot: {fileID: 0}
+    backSlot: {fileID: 0}
+    trinket1Slot: {fileID: 0}
+    trinket2Slot: {fileID: 0}
+  alliedFactions: 00000000030000000500000006000000
+  enemyFactions: 01000000020000000400000007000000
+  startingFaction: 0
+  health: 48
+  mana: 40
+  gold: 0
+  karma: -15
+  physicalDamage: 12
+  magicalDamage: 4
+  physicalDefense: 6
+  magicalDefense: 3
+  strengthStat: 1
+  agilityStat: 4
+  staminaStat: 1
+  intelligenceStat: 0
+  wisdomStat: 0
+  dexterityStat: 1
+  poiseStat: 0
+  charismaStat: 2
+  perceptionStat: 2
+  luckStat: 3
+  speedStat: 2
+  strengthMax: 22
+  agilityMax: 54
+  staminaMax: 26
+  intelligenceMax: 21
+  wisdomMax: 12
+  dexterityMax: 54
+  poiseMax: 8
+  charismaMax: 67
+  perceptionMax: 40
+  luckMax: 72
+  speedMax: 64
+  strengthGain: 1
+  agilityGain: 3
+  staminaGain: 1
+  intelligenceGain: -1
+  wisdomGain: -2
+  dexterityGain: 0
+  poiseGain: -3
+  charismaGain: 1
+  perceptionGain: 0
+  luckGain: 2
+  speedGain: 2
+  experienceDrop: 0
+  lootItems:
+    slot1: {fileID: 0}
+    slot2: {fileID: 0}
+    slot3: {fileID: 0}
+    slot4: {fileID: 0}
+    slot5: {fileID: 0}
+    slot6: {fileID: 0}
+    slot7: {fileID: 0}
+    slot8: {fileID: 0}
+  lootEquipment:
+    mainHandSlot: {fileID: 0}
+    offHandSlot: {fileID: 0}
+    headSlot: {fileID: 0}
+    shoulderSlot: {fileID: 0}
+    chestSlot: {fileID: 0}
+    armSlot: {fileID: 0}
+    handSlot: {fileID: 0}
+    legSlot: {fileID: 0}
+    footSlot: {fileID: 0}
+    backSlot: {fileID: 0}
+    trinket1Slot: {fileID: 0}
+    trinket2Slot: {fileID: 0}

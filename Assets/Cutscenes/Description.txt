@@ -1,0 +1,38 @@
+Step-by-step:
+
+Cutscene Manager - class that controls the cutscene.
+	
+	The manager is a singleton that has static functions allowing
+	for other scripts to call for a cutscene to start.
+
+	When starting a cutscene, you give a name(string) and the manager
+	pulls out the prefab'd cutscene from the resources folder and
+	begins playing it.
+
+Cutscene Prefab - a gameobject containing cameras, scripts and 
+	references that make up the cutscene.
+
+	Each cutscene has a list of cameras that will be used within
+	that particular cutscene.  Each camera will contain its own
+	animations which have animation events tied to them.
+
+	These animation events contain links to the cutscene camera
+	script.  The script contains references stored within regarding
+	which objects are relevant to the cutscene, which camera + 
+	animation to play next, etc.
+
+	Objects will have their own animations that will play when a
+	cutscene camera's animation event is triggered and these 
+	animations are stored by name(string).  The manager will decipher
+	how each cutscene plays out by the given name(string).
+
+Animations - the motion of the cameras that make up the cutscenes
+
+	Camera motion is determined by set animations that are bound to 
+	the local space of the Cutscene Prefab itself.  These animations
+	are fixed and set at a length that includes an automatic +5.0 seconds
+	onto the end.  This allows for transitions of varying length up to 
+	5.0 seconds.
+
+	Animation events trigger right at the cutscene motion's end,
+	so the transitions are defined ahead of time in the Cutscene Prefab.

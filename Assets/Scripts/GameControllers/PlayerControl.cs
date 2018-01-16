@@ -73,8 +73,8 @@ public class PlayerControl : MonoBehaviour
 		// When we click a unit, display healthbar and select tit
 		if (clickTarget.tag.ToLower () == "character")
 		{
-			if (clickTarget.GetComponent<Hero> ())
-				selectedCharacter = clickTarget.GetComponent<Hero> ();
+			if (clickTarget.GetComponent<Character> ().currentFaction == Character.Factions.player)
+				selectedCharacter = clickTarget.GetComponent<Character> ();
 
 			if (!clickTarget.GetComponent<Character> ().showingHealthbar)
 				clickTarget.GetComponent<Character> ().ShowHealthbar ();
@@ -88,8 +88,8 @@ public class PlayerControl : MonoBehaviour
 		
 		if (clickTarget.tag.ToLower () == "character")
 		{
-			if (clickTarget.GetComponent<Hero> ())
-				selectedCharacter = clickTarget.GetComponent<Hero> ();
+			if (clickTarget.GetComponent<Character> ().currentFaction == Character.Factions.player)
+				selectedCharacter = clickTarget.GetComponent<Character> ();
 
 			if (!clickTarget.GetComponent<Character> ().showingHealthbar)
 				clickTarget.GetComponent<Character> ().ShowHealthbar ();
@@ -151,7 +151,7 @@ public class PlayerControl : MonoBehaviour
 
 				if(selectedCharacter)
 				if(selectedCharacter.posList.Count > 0)
-				if (Vector3.Distance (hit.point, selectedCharacter.posList [0]) < 0.4f)
+				if (Vector3.Distance (hit.point, selectedCharacter.posList [0]) < radiusOfWireSphere)
 					ClearTargetPosition ();
 			}
 

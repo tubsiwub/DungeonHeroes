@@ -70,14 +70,35 @@
      <Compile Include="Assets\AstarPathfindingProject\Legacy\Editor\LegacyAIPathEditor.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Legacy\Editor\LegacyEditorHelper.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\Cutscenes\Description.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\AstarPathfindingProject\Plugins\dependencies.txt" />
      <None Include="Assets\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald Bold - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\NotoSans - License.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
      <None Include="Assets\AstarPathfindingProject\Readme.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
      <None Include="Assets\AstarPathfindingProject\link.xml" />
  <Reference Include="UnityEngine.UI">
@@ -151,6 +172,12 @@
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
  <HintPath>C:/Users/Tubsiwub/Desktop/DungeonHeroes/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.2-1.0.56-Editor">
+ <HintPath>C:/Users/Tubsiwub/Desktop/DungeonHeroes/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.2-1.0.56-Runtime">
+ <HintPath>C:/Users/Tubsiwub/Desktop/DungeonHeroes/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Tubsiwub/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>

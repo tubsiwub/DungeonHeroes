@@ -24,6 +24,9 @@ public class Emotion : MonoBehaviour
 		//GetComponent<RectTransform> ().position = new Vector3(newRect.position.x + newSize, Screen.height - newRect.position.y, 0);
 		//GetComponent<RectTransform> ().sizeDelta = new Vector2(newSize, newSize);
 
+		if (targetCharacter == null)
+			return;
+
 		Rect newRect = MathFunctions.GUIRectWithObject (targetCharacter.gameObject);
 		float newSize = 25;
 		GetComponent<RectTransform> ().position = new Vector3(newRect.position.x + newSize, Screen.height - newRect.position.y, 0);

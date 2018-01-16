@@ -39,6 +39,9 @@ using Pathfinding.Util;
 [AddComponentMenu("Pathfinding/AI/AIPath (2D,3D)")]
 [HelpURL("http://arongranberg.com/astar/docs/class_a_i_path.php")]
 public class AIPath : AIBase {
+
+	[Header("AI Pathing")]
+
 	/** Determines how often it will search for new paths.
 	 * If you have fast moving targets or AIs, you might want to set it to a lower value.
 	 * The value is in seconds between path requests.

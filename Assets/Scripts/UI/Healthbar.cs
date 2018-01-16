@@ -19,6 +19,9 @@ public class Healthbar : MonoBehaviour
 
 	void Update () 
 	{
+		if (targetCharacter == null)
+			return;
+
 		Rect newRect = MathFunctions.GUIRectWithObject (targetCharacter.gameObject);
 		GetComponent<RectTransform> ().position = new Vector3(newRect.position.x + newRect.width/2, Screen.height - (newRect.position.y - newRect.height/2), 0);
 

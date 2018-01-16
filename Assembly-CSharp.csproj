@@ -148,14 +148,17 @@
      <Compile Include="Assets\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Utilities\RetainedGizmos.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\Cutscenes\Scripts\Cutscene.cs" />
+     <Compile Include="Assets\Cutscenes\Scripts\CutsceneCamera.cs" />
+     <Compile Include="Assets\Cutscenes\Scripts\CutsceneManager.cs" />
      <Compile Include="Assets\Scripts\Characters\Character.cs" />
      <Compile Include="Assets\Scripts\Characters\Enemy\Enemy.cs" />
-     <Compile Include="Assets\Scripts\Characters\Enemy\Goblin.cs" />
      <Compile Include="Assets\Scripts\Characters\Hero\Hero.cs" />
-     <Compile Include="Assets\Scripts\Characters\Hero\Rogue.cs" />
+     <Compile Include="Assets\Scripts\Characters\NPC.cs" />
      <Compile Include="Assets\Scripts\Containers\Container.cs" />
      <Compile Include="Assets\Scripts\Containers\TreasureChest.cs" />
      <Compile Include="Assets\Scripts\GameControllers\CameraControl.cs" />
+     <Compile Include="Assets\Scripts\GameControllers\MapPreferences.cs" />
      <Compile Include="Assets\Scripts\GameControllers\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\GameControllers\References.cs" />
      <Compile Include="Assets\Scripts\Items\Equipment\Armor.cs" />
@@ -165,17 +168,73 @@
      <Compile Include="Assets\Scripts\Items\Item.cs" />
      <Compile Include="Assets\Scripts\SnapToGrid.cs" />
      <Compile Include="Assets\Scripts\UI\Emotion.cs" />
+     <Compile Include="Assets\Scripts\UI\FitIntoMask.cs" />
      <Compile Include="Assets\Scripts\UI\Healthbar.cs" />
+     <Compile Include="Assets\Scripts\UI\InventoryUI.cs" />
+     <Compile Include="Assets\Scripts\UI\ScaleToScreen.cs" />
      <Compile Include="Assets\Scripts\Utilities\MathFunctions.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\Cutscenes\Description.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\AstarPathfindingProject\Plugins\dependencies.txt" />
      <None Include="Assets\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald Bold - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\NotoSans - License.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
      <None Include="Assets\AstarPathfindingProject\Readme.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
      <None Include="Assets\AstarPathfindingProject\link.xml" />
  <Reference Include="UnityEngine.UI">
@@ -207,6 +266,12 @@
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
  <HintPath>C:/Users/Tubsiwub/Desktop/DungeonHeroes/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.2-1.0.56-Editor">
+ <HintPath>C:/Users/Tubsiwub/Desktop/DungeonHeroes/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.2-1.0.56-Runtime">
+ <HintPath>C:/Users/Tubsiwub/Desktop/DungeonHeroes/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/Tubsiwub/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
